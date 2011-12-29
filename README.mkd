@@ -1,0 +1,30 @@
+unite-scripts
+========
+- unite-scriptに食わせるスクリプト群
+
+
+Usage:
+------
+0.unite.vimを入れる
+    https://github.com/Shougo/unite.vim
+
+1.unite-script.vimを入れる
+    original: https://github.com/hakobe/unite-script
+    fork版: https://github.com/ikeji/unite-script
+    (2011/12/29現在オリジナル版はメンテナンスされておらずエラーとなる)
+
+2.これをどこか適当なとこに置く
+    .vim/下にsubmoduleとして入れるとか
+
+3.vimから呼ぶ
+    :Unite script:perl:/path/to/nicoranking.pl
+
+4..vimrcにショートカット設定しとくと楽かも
+    nnoremap <silent> ,un  :Unite script:perl:/path/to/nicoranking.pl<CR>
+
+List:
+------
+- nicoranking.pl
+    ニコニコ動画のカテゴリ合算再生ランキングを表示
+
+
